@@ -1,0 +1,76 @@
+body {
+	margin:50px;
+	padding:0px;
+	border-width:0px;
+	background:url('../img/bg1.jpg'); /* default background, you may change it by 'backgournd' command .*/
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	overflow:hidden;
+
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+
+	font-family: courier,fixed,swiss,monospace,sans-serif;
+	font-size: 14px;
+	color: #f0f0f0;
+}
+
+.terminal
+{
+	border-style:none;
+	position:absolute;
+	z-index: 10;
+}
+
+.terminal-title
+{
+	background:#393f3f;
+	color:white;
+	border-radius: 5px 5px 0px 0px;
+	margin:0;
+	font-weight:bold;
+	padding:5px;
+}
+
+.terminal-toolbar
+{
+	background:#393f3f;
+	color:white;
+	margin:0px;
+}
+
+.terminal-toolbar ul
+{
+	list-style:none;
+	display:inline;
+	white-space:nowrap;
+}
+.terminal-toolbar ul li
+{
+	display:inline;
+	margin: 20px;
+}
+.terminal-toolbar ul li:hover
+{
+	background: #393f0f;
+	font-weight: bold;
+}
+
+.terminal-body
+{
+	background:#000;
+	color:white;
+	height:100%;
+	overflow:auto;
+	border-style:solid;
+	border-width:0 1px 1px 1px;
+	border-color:gray;
+}
+
+.pointer
+{
+	background:white;
+	display:none;
+}
