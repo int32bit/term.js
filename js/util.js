@@ -14,7 +14,7 @@ String.prototype.trim = function()
     return this.replace(/^\s+|\s+$/g, '');
 }
 
-function blink(obj)
+function blink_me(obj)
 {
 	setInterval(function(){
 		obj.toggle();

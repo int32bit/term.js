@@ -1,14 +1,14 @@
 function do_help(args)
 {
-    var help = "Keyboard Shortcuts: <br/>";
-    help += "&nbsp;".repeat(4) + "<span class='dir'>Ctrl + L</span>" + "&nbsp;".repeat(4) + "Clears the Screen, similar to the 'clear' command.</br/>";
-    help += "&nbsp;".repeat(4) + "<span class='dir'>Ctrl + H</span>" + "&nbsp;".repeat(4) + "Delete character before the cursor, same as backspace.</br/>";
-    help += "&nbsp;".repeat(4) + "<span class='dir'>Ctrl + U</span>" + "&nbsp;".repeat(4) + "Clears the line before the cursor position.</br/>";
-    help += "&nbsp;".repeat(4) + "<span class='dir'>Ctrl + P</span>" + "&nbsp;".repeat(4) + "Previous command in history.</br/>";
-    help += "&nbsp;".repeat(4) + "<span class='dir'>Ctrl + N</span>" + "&nbsp;".repeat(4) + "Next command in history.</br/>";
-    help += "&nbsp;".repeat(4) + "<span class='dir'>Ctrl + D</span>" + "&nbsp;".repeat(4) + "Exit the terminal.</br/>";
+    var help = "<span class='blue'>Keyboard Shortcuts:</span> <br/>";
+    help += "&nbsp;".repeat(4) + "<span class='highlight'>Ctrl + L</span>" + "&nbsp;".repeat(4) + "Clears the Screen, similar to the 'clear' command.</br/>";
+    help += "&nbsp;".repeat(4) + "<span class='highlight'>Ctrl + H</span>" + "&nbsp;".repeat(4) + "Delete character before the cursor, same as backspace.</br/>";
+    help += "&nbsp;".repeat(4) + "<span class='highlight'>Ctrl + U</span>" + "&nbsp;".repeat(4) + "Clears the line before the cursor position.</br/>";
+    help += "&nbsp;".repeat(4) + "<span class='highlight'>Ctrl + P</span>" + "&nbsp;".repeat(4) + "Previous command in history.</br/>";
+    help += "&nbsp;".repeat(4) + "<span class='highlight'>Ctrl + N</span>" + "&nbsp;".repeat(4) + "Next command in history.</br/>";
+    help += "&nbsp;".repeat(4) + "<span class='highlight'>Ctrl + D</span>" + "&nbsp;".repeat(4) + "Exit the terminal.</br/>";
 
-    help += "Available Commands: <br/>";
+    help += "<span class='blue'>Available Commands:</span> <br/>";
     for (i in commands) {
         help += "<span class='dir'>" + i + "</span> ";
     }
@@ -22,7 +22,13 @@ function do_cd(args)
 
 function do_about(args)
 {
-    return "fgp";
+    var output = "termjs: a simplest web terminal implemented by js<br/>";
+    output += "Author: int32bit<br/>";
+    output += "License: " + "<a href='LICENSE'>MIT license</a>" + "<br/>";
+    output += "Version: " + "1.0-beta" + "<br/>";
+    output += "Last update: " + "2016-10-03" + "<br/>";
+    output += "Copyright &copyright; 2016, All rights reserved.";
+    return output;
 }
 
 function do_date(args)
@@ -72,12 +78,6 @@ function do_reload(args)
     return "";
 }
 
-function do_background(args)
-{
-    changeBackground();
-    return "";
-}
-
 function do_ls(args)
 {
     var output = "";
@@ -100,7 +100,7 @@ function do_colors(args)
 
 function do_demo(args)
 {
-    return "This is a demo, Please implement your own functions!"
+    return "This is a demo, you can add your own functions easily!"
 }
 
 function do_bg(args)

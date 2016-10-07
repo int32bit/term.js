@@ -21,18 +21,18 @@
 					$(document).on('keydown', function(ev){
 						var ev =ev ||  window.event;
 						processInput(ev);
-						return false; /* 加上这个回退键就不会后退页面了 */
+						return false; /* Disable keyboard switch page */
 					});
-					blink($(".pointer"));
+					blink_me($(".pointer"));
 				});
 		</script>
-	</head>
+    </head>
+    <!-- end head -->
 	<body>
-
-		<div id="terminal"  class="terminal easyui-draggable easyui-resizable" style="width:800px;height:500px;" >
+        <div id="terminal"  class="terminal easyui-draggable easyui-resizable" style="width:800px;height:500px;"> <!-- default terminal size is 800 * 500 -->
 			<div class="terminal-title">
 				<div style="text-align:center;">
-					fgp@int32bit.me:~
+					int32bit@github.com:~
 				</div>
 			</div>
 			<div class="terminal-toolbar" style="text-align:left;">
@@ -47,13 +47,12 @@
 			<div class="terminal-body" id="terminal-input-body">
 				<div class='output'>You can type 'help' for more information about how to use this terminal!</div>
 				<div class='output'>Contact me if you have any issue.</div>
-				<div id="lastLine">fgp@int32bit.me:~$
+				<div id="lastLine">int32bit@github.com:~$
 					<span id="input"></span>
 					<span class="pointer">&nbsp;</span>
 					<a name="bottom-tag"></a>
 				</div>
 			</div>
 		</div> <!-- terminal -->
-
 	</body>
 </html>
