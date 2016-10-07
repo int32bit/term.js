@@ -27,7 +27,7 @@ function do_about(args)
     output += "License: " + "<a href='LICENSE'>MIT license</a>" + "<br/>";
     output += "Version: " + "1.0-beta" + "<br/>";
     output += "Last update: " + "2016-10-03" + "<br/>";
-    output += "Copyright &copyright; 2016, All rights reserved.";
+    output += "Copyright &copy 2016, All rights reserved.";
     return output;
 }
 
