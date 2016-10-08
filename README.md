@@ -31,7 +31,7 @@ For the impatient:
 
 ## Add new command
 
-Edit `js/commands.js` and add a command function with the prefix of `do_`. For example, assume you need implement `hello` command, you may append following code in `commands.js`:
+Edit `js/commands.js` and add a command function with the prefix of `do_`. For example, assume you want to implement `hello` command, you may append following code in `commands.js`:
 
 ```js
 function do_hello(args)
